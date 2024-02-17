@@ -11,7 +11,13 @@ For more details on this setup, refer to my blog post here: https://matthamlin.m
 - Run `bun install` (if you don't have bun installed locally, refer to their [docs](https://bun.sh))
 - Start writing some code!
 
+## Tools:
+
+- Bun
+- Turbo
+- Next.js
+
 ## Future Enhancements:
 
-- Adopt a task runner (e.g. Turbo/Whare/etc)
 - Add an E2E example setup
+- Add publish config to a package
