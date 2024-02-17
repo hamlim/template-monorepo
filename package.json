@@ -4,5 +4,11 @@
     "docs",
     "packages/*"
   ],
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "turbo": "^1.12.4"
+  },
+  "scripts": {
+    "build": "turbo run build"
+  }
 }

@@ -1,11 +1,19 @@
 {
   "name": "pkg-a",
   "module": "index.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    }
+  },
   "type": "module",
   "devDependencies": {
     "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "build": "bun build ./index.ts --outdir ./dist"
   }
 }
