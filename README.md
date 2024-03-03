@@ -13,11 +13,15 @@ For more details on this setup, refer to my blog post here: https://matthamlin.m
 
 ## Tools:
 
-- Bun
-- Turbo
-- Next.js
+- [Bun](https://bun.sh)
+- [Turborepo](https://turbo.dev/repo/docs)
+- [Next.js](https://nextjs.org)
+- [SWC](https://swc.rs/)
+- [TypeScript](https://www.typescriptlang.org/docs/)
+- [dprint](https://www.typescriptlang.org/docs/)
 
 ## Future Enhancements:
 
 - Add an E2E example setup
 - Add publish config to a package
+- Add oxlint setup
