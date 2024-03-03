@@ -6,9 +6,12 @@
   ],
   "private": true,
   "devDependencies": {
+    "dprint": "^0.45.0",
     "turbo": "^1.12.4"
   },
   "scripts": {
-    "build": "turbo run build"
+    "build": "turbo run build  --output-logs=errors-only",
+    "build:packages": "turbo run build --filter=./packages/* --output-logs=errors-only",
+    "type-check": "turbo run type-check --output-logs=errors-only"
   }
 }
