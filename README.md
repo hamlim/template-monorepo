@@ -11,6 +11,15 @@ For more details on this setup, refer to my blog post here: https://matthamlin.m
 - Run `bun install` (if you don't have bun installed locally, refer to their [docs](https://bun.sh))
 - Start writing some code!
 
+## Tasks:
+
+Since this is a `turborepo` monorepo, you can run some tasks across the repo with ease by using the configured "tasks" from the root `package.json` and `turbo.json` files. Currently the below tasks are supported:
+
+- `build`
+- `type-check`
+- `lint`
+- `format`
+
 ## Tools:
 
 - [Bun](https://bun.sh)
@@ -19,9 +28,9 @@ For more details on this setup, refer to my blog post here: https://matthamlin.m
 - [SWC](https://swc.rs/)
 - [TypeScript](https://www.typescriptlang.org/docs/)
 - [dprint](https://www.typescriptlang.org/docs/)
+- [oxlint](https://oxc-project.github.io/docs/guide/usage/linter.html)
 
 ## Future Enhancements:
 
 - Add an E2E example setup
 - Add publish config to a package
-- Add oxlint setup

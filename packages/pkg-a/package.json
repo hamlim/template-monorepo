@@ -10,18 +10,20 @@
   },
   "type": "module",
   "devDependencies": {
-    "@swc/cli": "^0.3.10",
-    "@swc/core": "^1.4.2",
-    "@types/bun": "latest"
+    "@swc/cli": "0.3.10",
+    "@swc/core": "1.4.2",
+    "@types/bun": "latest",
+    "oxlint": "0.2.12"
   },
   "peerDependencies": {
-    "typescript": "^5.0.0"
+    "typescript": "5.0.0"
   },
   "scripts": {
     "prebuild": "rm -rf ./dist",
     "build:source": "swc ./src -d ./dist --strip-leading-paths",
     "build:types": "tsc -p ./build.tsconfig.json",
     "build": "bun run build:source && bun run build:types",
-    "type-check": "tsc -p ./tsconfig.json"
+    "type-check": "tsc -p ./tsconfig.json",
+    "lint": "oxlint"
   }
 }

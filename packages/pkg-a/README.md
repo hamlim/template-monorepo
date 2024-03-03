@@ -23,3 +23,7 @@ To build the library, run `bun run build` from the root, or from this workspace!
 ### Type Checking:
 
 This library uses TypeScript to perform type checks, run `bun run type-check` from the root or from this workspace!
+
+### Linting
+
+This library using [oxlint](https://oxc-project.github.io/docs/guide/usage/linter.html) for linting, run `bun run lint` from the root or from this workspace!

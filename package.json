@@ -12,6 +12,8 @@
   "scripts": {
     "build": "turbo run build  --output-logs=errors-only",
     "build:packages": "turbo run build --filter=./packages/* --output-logs=errors-only",
-    "type-check": "turbo run type-check --output-logs=errors-only"
+    "type-check": "turbo run type-check --output-logs=errors-only",
+    "lint": "turbo run lint --output-logs=errors-only",
+    "format": "dprint fmt"
   }
 }
