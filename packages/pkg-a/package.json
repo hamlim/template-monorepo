@@ -21,6 +21,7 @@
 		"build:types": "tsc -p ./build.tsconfig.json",
 		"build": "bun run build:source && bun run build:types",
 		"type-check": "tsc -p ./tsconfig.json",
-		"lint": "biome lint ./src/"
+		"lint": "biome lint ./src/",
+		"test": "bun test"
 	}
 }

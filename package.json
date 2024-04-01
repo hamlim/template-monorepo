@@ -12,8 +12,10 @@
   "scripts": {
     "build": "turbo run build ",
     "build:packages": "turbo run build --filter=./packages/*",
-    "type-check": "turbo run type-check --output-logs=errors-only",
+    "type-check": "turbo run type-check",
     "lint": "turbo run lint",
-    "format": "dprint fmt"
+    "format": "dprint fmt",
+    "format:check": "dprint check",
+    "test": "turbo run test"
   }
 }
