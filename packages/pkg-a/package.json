@@ -1,29 +1,26 @@
 {
-  "name": "pkg-a",
-  "version": "0.0.1",
-  "module": "index.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
-    }
-  },
-  "type": "module",
-  "devDependencies": {
-    "@swc/cli": "0.3.10",
-    "@swc/core": "1.4.2",
-    "@types/bun": "latest",
-    "oxlint": "0.2.12"
-  },
-  "peerDependencies": {
-    "typescript": "5.0.0"
-  },
-  "scripts": {
-    "prebuild": "rm -rf ./dist",
-    "build:source": "swc ./src -d ./dist --strip-leading-paths",
-    "build:types": "tsc -p ./build.tsconfig.json",
-    "build": "bun run build:source && bun run build:types",
-    "type-check": "tsc -p ./tsconfig.json",
-    "lint": "oxlint"
-  }
+	"name": "pkg-a",
+	"version": "0.0.1",
+	"module": "index.ts",
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"types": "./dist/index.d.ts"
+		}
+	},
+	"type": "module",
+	"devDependencies": {
+		"@biomejs/biome": "1.6.3",
+		"@swc/cli": "0.3.10",
+		"@swc/core": "1.4.2",
+		"@types/bun": "latest"
+	},
+	"scripts": {
+		"prebuild": "rm -rf ./dist",
+		"build:source": "swc ./src -d ./dist --strip-leading-paths",
+		"build:types": "tsc -p ./build.tsconfig.json",
+		"build": "bun run build:source && bun run build:types",
+		"type-check": "tsc -p ./tsconfig.json",
+		"lint": "biome lint ./src/"
+	}
 }

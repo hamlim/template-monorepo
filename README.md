@@ -28,7 +28,7 @@ Since this is a `turborepo` monorepo, you can run some tasks across the repo wit
 - [SWC](https://swc.rs/)
 - [TypeScript](https://www.typescriptlang.org/docs/)
 - [dprint](https://www.typescriptlang.org/docs/)
-- [oxlint](https://oxc-project.github.io/docs/guide/usage/linter.html)
+- [BiomeJS](https://biomejs.dev/)
 
 ## Future Enhancements:
 
