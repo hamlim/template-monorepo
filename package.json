@@ -10,6 +10,7 @@
     "turbo": "^1.12.4"
   },
   "scripts": {
+    "dev": "turbo run dev",
     "build": "turbo run build ",
     "build:packages": "turbo run build --filter=./packages/*",
     "type-check": "turbo run type-check",
