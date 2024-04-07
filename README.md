@@ -19,6 +19,20 @@ Since this is a `turborepo` monorepo, you can run some tasks across the repo wit
 - `type-check`
 - `lint`
 - `format`
+- `test`
+
+## Creating new workspaces:
+
+This template has a minimal generator for creating new libraries and applications, both of which are defined by the `template-library` and `template-app` workspaces respectively. To create a new workspace, run the following command:
+
+```sh
+bun run generate --name <name> --type <package|app>
+```
+
+This will create either:
+
+- A new library within `packages/<name>` based on `packages/template-library`
+- A new application within `apps/<name>` based on `apps/template-app`
 
 ## Tools:
 

@@ -1,4 +1,4 @@
-# `pkg-a`
+# `template-library`
 
 To install dependencies:
 
