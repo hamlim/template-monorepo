@@ -31,3 +31,9 @@ This library uses [BiomeJS](https://biomejs.dev/) for linting, run `bun run lint
 ### Tests
 
 This library uses Bun for running unit tests, run `bun run test` from the root or from this workspace!
+
+## Publishing:
+
+To publish the library, run `bun run pub` from the workspace root. This will prompt you to login to npm and publish the package.
+
+> Note: In the future, we will automate this process using GitHub Actions. And also add in tooling to manage releases / changelogs!

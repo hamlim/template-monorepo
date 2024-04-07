@@ -22,6 +22,8 @@
 		"build": "bun run build:source && bun run build:types",
 		"type-check": "tsc -p ./tsconfig.json",
 		"lint": "biome lint ./src/",
-		"test": "bun test"
+		"test": "bun test",
+		"prepub": "bun run build && bun run type-check && bun run lint && bun run test",
+		"pub": "npm publish --access public"
 	}
 }
