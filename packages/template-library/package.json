@@ -13,13 +13,12 @@
 		"@biomejs/biome": "1.6.3",
 		"@swc/cli": "0.3.10",
 		"@swc/core": "1.4.2",
-		"@types/bun": "latest"
+		"hohoro": "0.1.0",
+		"@types/bun": "latest",
+		"typescript": "5.4.5"
 	},
 	"scripts": {
-		"prebuild": "rm -rf ./dist",
-		"build:source": "swc ./src -d ./dist --strip-leading-paths",
-		"build:types": "tsc -p ./build.tsconfig.json",
-		"build": "bun run build:source && bun run build:types",
+		"build": "hohoro",
 		"type-check": "tsc -p ./tsconfig.json",
 		"lint": "biome lint ./src/",
 		"test": "bun test",
