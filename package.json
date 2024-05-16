@@ -8,6 +8,7 @@
   "devDependencies": {
     "@turbo/gen": "1.13.3",
     "dprint": "0.45.0",
+    "one-version": "0.1.1",
     "turbo": "1.13.3"
   },
   "scripts": {
@@ -19,6 +20,7 @@
     "format": "dprint fmt",
     "format:check": "dprint check",
     "test": "turbo run test",
-    "generator": "bun ./scripts/generator.ts"
+    "generator": "bun ./scripts/generator.ts",
+    "one-version:check": "one-version check"
   }
 }

@@ -16,6 +16,10 @@ Since this is a `turborepo` monorepo, you can run some tasks across the repo wit
 - `format`
 - `test`
 
+### Root only tasks:
+
+- `one-version:check` - Check if all dependencies are using the same version
+
 ## Creating new workspaces:
 
 This template has a minimal generator for creating new libraries and applications, both of which are defined by the `template-library` and `template-app` workspaces respectively. To create a new workspace, run the following command:
@@ -39,3 +43,4 @@ This will create either:
 - [hohoro](https://hohoro.vercel.app/)
 - [dprint](https://www.typescriptlang.org/docs/)
 - [BiomeJS](https://biomejs.dev/)
+- [one-version](https://one-version.vercel.app/)
