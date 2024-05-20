@@ -1,7 +1,17 @@
 {
 	"name": "pkg-a",
 	"version": "0.0.1",
-	"module": "index.ts",
+	"description": "TODO",
+	"homepage": "TODO",
+	"author": {
+		"name": "TODO",
+		"email": "TODO"
+	},
+	"repository": {
+		"type": "git",
+		"url": "TODO",
+		"directory": "packages/pkg-a"
+	},
 	"exports": {
 		".": {
 			"import": "./dist/index.js",
