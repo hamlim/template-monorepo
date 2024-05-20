@@ -1,7 +1,17 @@
 {
 	"name": "template-library",
 	"version": "0.0.1",
-	"module": "index.ts",
+	"description": "TODO",
+	"homepage": "TODO",
+	"author": {
+		"name": "TODO",
+		"email": "TODO"
+	},
+	"repository": {
+		"type": "git",
+		"url": "TODO",
+		"directory": "packages/template-library"
+	},
 	"exports": {
 		".": {
 			"import": "./dist/index.js",
