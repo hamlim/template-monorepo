@@ -23,7 +23,7 @@
 		"@biomejs/biome": "1.6.3",
 		"@swc/cli": "0.3.10",
 		"@swc/core": "1.4.2",
-		"hohoro": "0.1.1",
+		"hohoro": "0.1.2",
 		"@types/bun": "latest",
 		"typescript": "5.4.5"
 	},
