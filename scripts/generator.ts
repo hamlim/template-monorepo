@@ -2,7 +2,7 @@ import { $ } from "bun";
 import { execSync } from "node:child_process";
 
 // Example CLI args:
-// --name foo-bar --copy template-library --type package --destination packages/foo-bar
+// --name foo-bar --copy template-library --type package
 
 // parse CLI args as a Record<string, string | boolean> (default to true if no value is provided)
 // the format of the args are either `--key=value` or `--key` or `--key value` or `--key`
