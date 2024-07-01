@@ -9,7 +9,7 @@
     "@turbo/gen": "1.13.3",
     "dprint": "0.45.0",
     "one-version": "0.2.0",
-    "turbo": "1.13.3"
+    "turbo": "2.0.6"
   },
   "scripts": {
     "dev": "turbo run dev",
@@ -22,5 +22,6 @@
     "test": "turbo run test",
     "generator": "bun ./scripts/generator.ts",
     "one-version:check": "one-version check"
-  }
+  },
+  "packageManager": "bun@1.1.17"
 }
