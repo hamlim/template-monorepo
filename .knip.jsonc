@@ -2,18 +2,11 @@
   "$schema": "https://unpkg.com/knip@5/schema.json",
   "workspaces": {
     ".": {
-      "ignoreDependencies": [
-        "@turbo/gen"
-      ]
+      "ignoreDependencies": ["@turbo/gen"]
     },
     "packages/*": {
-      "ignore": [
-        "**/*.test.(ts|tsx|mjs|js)"
-      ],
-      "ignoreDependencies": [
-        "@swc/cli",
-        "@swc/core"
-      ]
+      "ignore": ["**/*.test.(ts|tsx|mjs|js)"],
+      "ignoreDependencies": ["@swc/cli", "@swc/core"]
     }
   }
 }

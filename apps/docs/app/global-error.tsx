@@ -5,9 +5,12 @@ export default function GlobalError() {
   return (
     <main className="flex h-screen w-full flex-col items-center justify-center gap-6">
       <div className="space-y-2 text-center">
-        <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl">Oops, something went wrong!</h1>
+        <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl">
+          Oops, something went wrong!
+        </h1>
         <p className="text-gray-500 dark:text-gray-400">
-          We apologize for the inconvenience. Please try again later or navigate back to the homepage.
+          We apologize for the inconvenience. Please try again later or navigate
+          back to the homepage.
         </p>
       </div>
       <Link

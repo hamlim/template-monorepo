@@ -1,16 +1,13 @@
 {
   "name": "root",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
+  "workspaces": ["apps/*", "packages/*"],
   "private": true,
   "devDependencies": {
     "@turbo/gen": "1.13.3",
-    "dprint": "0.45.0",
     "knip": "^5.25.2",
     "one-version": "0.2.0",
-    "turbo": "2.0.6"
+    "turbo": "2.0.6",
+    "@biomejs/biome": "1.8.3"
   },
   "scripts": {
     "dev": "turbo run dev",
@@ -18,8 +15,8 @@
     "build:packages": "turbo run build --filter=./packages/*",
     "type-check": "turbo run type-check",
     "lint": "turbo run lint",
-    "format": "dprint fmt",
-    "format:check": "dprint check",
+    "format": "biome format --write",
+    "format:check": "biome format --changed --no-errors-on-unmatched",
     "test": "turbo run test",
     "generator": "bun ./scripts/generator.ts",
     "one-version:check": "one-version check",
