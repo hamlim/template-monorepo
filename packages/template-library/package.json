@@ -1,38 +1,37 @@
 {
-	"name": "template-library",
-	"version": "0.0.1",
-	"description": "TODO",
-	"homepage": "TODO",
-	"author": {
-		"name": "TODO",
-		"email": "TODO"
-	},
-	"repository": {
-		"type": "git",
-		"url": "TODO",
-		"directory": "packages/template-library"
-	},
-	"exports": {
-		".": {
-			"import": "./dist/index.js",
-			"types": "./dist/index.d.ts"
-		}
-	},
-	"type": "module",
-	"devDependencies": {
-		"@biomejs/biome": "1.6.3",
-		"@swc/cli": "0.3.10",
-		"@swc/core": "1.4.2",
-		"hohoro": "0.1.2",
-		"@types/bun": "latest",
-		"typescript": "5.4.5"
-	},
-	"scripts": {
-		"build": "hohoro",
-		"type-check": "tsc -p ./tsconfig.json",
-		"lint": "biome lint ./src/",
-		"test": "bun test",
-		"prepub": "bun run build && bun run type-check && bun run lint && bun run test",
-		"pub": "npm publish --access public"
-	}
+  "name": "template-library",
+  "version": "0.0.1",
+  "description": "TODO",
+  "homepage": "TODO",
+  "author": {
+    "name": "TODO",
+    "email": "TODO"
+  },
+  "repository": {
+    "type": "git",
+    "url": "TODO",
+    "directory": "packages/template-library"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "type": "module",
+  "devDependencies": {
+    "@swc/cli": "0.3.10",
+    "@swc/core": "1.4.2",
+    "hohoro": "0.1.2",
+    "@types/bun": "latest",
+    "typescript": "5.4.5"
+  },
+  "scripts": {
+    "build": "hohoro",
+    "type-check": "tsc -p ./tsconfig.json",
+    "lint": "biome lint ./src/",
+    "test": "bun test",
+    "prepub": "bun run build && bun run type-check && bun run lint && bun run test",
+    "pub": "npm publish --access public"
+  }
 }

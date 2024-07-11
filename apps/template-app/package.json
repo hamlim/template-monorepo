@@ -6,7 +6,7 @@
     "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "biome lint"
   },
   "dependencies": {
     "next": "14.3.0-canary.61"
@@ -16,8 +16,6 @@
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "autoprefixer": "10.0.1",
-    "eslint": "8.57.0",
-    "eslint-config-next": "14.1.4",
     "postcss": "8.4.35",
     "tailwindcss": "3.3.0",
     "typescript": "5.4.5"

@@ -13,7 +13,6 @@ Since this is a `turborepo` monorepo, you can run some tasks across the repo wit
 - `build`
 - `type-check`
 - `lint`
-- `format`
 - `test`
 
 ### Root only tasks:
@@ -22,6 +21,10 @@ Since this is a `turborepo` monorepo, you can run some tasks across the repo wit
   - Check if all dependencies are using the same version
 - `knip`
   - Run [Knip](https://knip.dev/) across the repo
+- `format`
+  - Run `Biome` formatter across the codebase
+- `format:check`
+  - Check formatting across the codebase
 
 ## Creating new workspaces:
 
@@ -44,6 +47,5 @@ This will create either:
 - [SWC](https://swc.rs/)
 - [TypeScript](https://www.typescriptlang.org/docs/)
 - [hohoro](https://hohoro.vercel.app/)
-- [dprint](https://www.typescriptlang.org/docs/)
 - [BiomeJS](https://biomejs.dev/)
 - [one-version](https://one-version.vercel.app/)

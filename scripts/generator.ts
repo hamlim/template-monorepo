@@ -1,5 +1,5 @@
-import { $ } from "bun";
 import { execSync } from "node:child_process";
+import { $ } from "bun";
 
 // Example CLI args:
 // --name foo-bar --copy template-library --type package
@@ -42,7 +42,9 @@ if (!type) {
 }
 
 if (type !== "package" && type !== "app") {
-  throw new Error(`Invalid type: ${type}, only "package" and "app" are allowed`);
+  throw new Error(
+    `Invalid type: ${type}, only "package" and "app" are allowed`,
+  );
 }
 
 if (type === "package") {
