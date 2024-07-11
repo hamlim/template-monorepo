@@ -18,7 +18,10 @@ Since this is a `turborepo` monorepo, you can run some tasks across the repo wit
 
 ### Root only tasks:
 
-- `one-version:check` - Check if all dependencies are using the same version
+- `one-version:check`
+  - Check if all dependencies are using the same version
+- `knip`
+  - Run [Knip](https://knip.dev/) across the repo
 
 ## Creating new workspaces:
 
