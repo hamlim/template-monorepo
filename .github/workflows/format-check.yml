@@ -1,4 +1,4 @@
-name: Knip Checks
+name: Format Checks
 
 on: [pull_request]
 
@@ -13,5 +13,5 @@ jobs:
     - name: Install dependencies
       run: bun install
 
-    - name: Run Knip
-      run: bun run knip
+    - name: Check formatting
+      run: bun run format:check
