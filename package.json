@@ -4,7 +4,7 @@
   "private": true,
   "devDependencies": {
     "@turbo/gen": "1.13.3",
-    "knip": "^5.25.2",
+    "knip": "5.25.2",
     "one-version": "0.2.0",
     "turbo": "2.1.1",
     "@biomejs/biome": "1.8.3"
