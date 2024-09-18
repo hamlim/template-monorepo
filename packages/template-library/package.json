@@ -22,7 +22,7 @@
   "devDependencies": {
     "@swc/cli": "0.3.10",
     "@swc/core": "1.4.2",
-    "hohoro": "0.2.0",
+    "hohoro": "0.2.1",
     "@types/bun": "latest",
     "typescript": "5.4.5"
   },
