@@ -1,3 +1,0 @@
-[install]
-# prevent the lockfile from being changed on installs
-frozenLockfile = true
