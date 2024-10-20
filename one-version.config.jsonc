@@ -1,4 +1,5 @@
 {
   "$schema": "https://one-version.vercel.app/schema.json",
-  "packageManager": "bun"
+  "packageManager": "bun",
+  "versionStrategy": "pin"
 }
