@@ -28,7 +28,7 @@
   },
   "scripts": {
     "dev": "node --watch-path=./src dev.mjs",
-    "build": "hohoro",
+    "build": "hohoro-experimental",
     "type-check": "tsc -p ./tsconfig.json",
     "lint": "biome lint ./src/",
     "test": "bun test",
