@@ -17,4 +17,4 @@ jobs:
         run: bun run build
 
       # Docs: https://github.com/stackblitz-labs/pkg.pr.new
-      - run: bunx pkg-pr-new publish --comment=update './packages/*' --template './apps/*'
+      - run: bunx pkg-pr-new publish --comment=update './packages/*' --packageManager=bun # --template './apps/*'
