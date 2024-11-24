@@ -49,3 +49,20 @@ This will create either:
 - [hohoro](https://hohoro.vercel.app/)
 - [BiomeJS](https://biomejs.dev/)
 - [one-version](https://one-version.vercel.app/)
+
+## Workflows:
+
+This template uses GitHub Actions:
+
+- [`.github/workflows/format-lint-check.yml`](./.github/workflows/format-lint-check.yml)
+  - For running `biome ci .` across the repo on pull requests
+- [`.github/workflows/knip-check.yml`](./.github/workflows/knip-check.yml)
+  - For running `knip` across the repo on pull requests
+- [`.github/workflows/one-version-check.yml`](./.github/workflows/one-version-check.yml)
+  - For running `one-version --check` across the repo on pull requests
+- [`.github/workflows/publish-experimental-releases.yml`](./.github/workflows/publish-experimental-releases.yml)
+  - For publishing experimental releases of all packages on pull requests + commits using https://pkg.pr.new
+- [`.github/workflows/tests.yml`](./.github/workflows/tests.yml)
+  - For running `bun run test` across the repo on pull requests
+- [`.github/workflows/type-check.yml`](./.github/workflows/type-check.yml)
+  - For running `tsc` across the repo on pull requests
