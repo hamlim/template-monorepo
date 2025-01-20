@@ -6,7 +6,7 @@
     "@turbo/gen": "1.13.3",
     "knip": "5.25.2",
     "one-version": "0.2.0",
-    "turbo": "2.2.3",
+    "turbo": "2.3.3",
     "@biomejs/biome": "1.9.4"
   },
   "scripts": {
