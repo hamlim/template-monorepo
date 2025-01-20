@@ -22,5 +22,5 @@
     "one-version:check": "one-version check",
     "knip": "knip"
   },
-  "packageManager": "bun@1.1.32"
+  "packageManager": "bun@1.1.45"
 }
