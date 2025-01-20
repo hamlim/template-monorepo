@@ -1,0 +1,29 @@
+{
+  "name": "@local/utils",
+  "version": "0.0.1",
+  "exports": {
+    "./cn": {
+      "import": "./dist/cn.js",
+      "types": "./dist/cn.d.ts"
+    }
+  },
+  "type": "module",
+  "devDependencies": {
+    "hohoro": "0.3.0",
+    "@types/bun": "1.1.11",
+    "typescript": "5.4.5"
+  },
+  "dependencies": {
+    "clsx": "2.1.1",
+    "tailwind-merge": "2.6.0"
+  },
+  "scripts": {
+    "dev": "node --watch-path=./src dev.mjs",
+    "build": "hohoro-experimental",
+    "type-check": "tsc -p ./tsconfig.json",
+    "lint": "biome lint ./src/",
+    "test": "bun test",
+    "prepub": "bun run build && bun run type-check && bun run lint && bun run test",
+    "pub": "npm publish --access public"
+  }
+}

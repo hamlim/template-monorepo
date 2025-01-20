@@ -1,4 +1,4 @@
-import { cn } from "~/lib/utils";
+import { cn } from "@local/utils/cn";
 
 export function H1(
   props: React.HTMLAttributes<HTMLHeadingElement> & {

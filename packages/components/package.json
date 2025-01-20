@@ -1,0 +1,63 @@
+{
+  "name": "@local/components",
+  "version": "0.0.1",
+  "exports": {
+    "./heading": {
+      "import": "./dist/heading.js",
+      "types": "./dist/heading.d.ts"
+    },
+    "./link": {
+      "import": "./dist/link.js",
+      "types": "./dist/link.d.ts"
+    },
+    "./error-message": {
+      "import": "./dist/error-message.js",
+      "types": "./dist/error-message.d.ts"
+    },
+    "./action": {
+      "import": "./dist/action.js",
+      "types": "./dist/action.d.ts"
+    },
+    "./form-button": {
+      "import": "./dist/form-button.js",
+      "types": "./dist/form-button.d.ts"
+    },
+    "./input": {
+      "import": "./dist/input.js",
+      "types": "./dist/input.d.ts"
+    },
+    "./select": {
+      "import": "./dist/select.js",
+      "types": "./dist/select.d.ts"
+    },
+    "./text": {
+      "import": "./dist/text.js",
+      "types": "./dist/text.d.ts"
+    },
+    "./textarea": {
+      "import": "./dist/textarea.js",
+      "types": "./dist/textarea.d.ts"
+    },
+    ".": "./index.js"
+  },
+  "main": "./index.js",
+  "type": "module",
+  "devDependencies": {
+    "hohoro": "0.3.0",
+    "@types/bun": "1.1.11",
+    "typescript": "5.4.5"
+  },
+  "dependencies": {
+    "@local/utils": "workspace:*",
+    "@radix-ui/react-select": "2.1.4"
+  },
+  "scripts": {
+    "dev": "node --watch-path=./src dev.mjs",
+    "build": "hohoro-experimental",
+    "type-check": "tsc -p ./tsconfig.json",
+    "lint": "biome lint ./src/",
+    "test": "bun test",
+    "prepub": "bun run build && bun run type-check && bun run lint && bun run test",
+    "pub": "npm publish --access public"
+  }
+}
