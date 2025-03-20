@@ -1,0 +1,38 @@
+projects:
+  web:
+    source: apps/web
+    type: application
+  backend:
+    source: apps/backend
+    type: application
+  ui:
+    source: packages/ui
+    type: library
+  utils:
+    source: packages/utils
+    type: library
+
+toolchain:
+  node:
+    version: "bundled" # version of bun being used
+    packageManager: bun
+  go:
+    version: "latest" # version of go being used
+
+tasks:
+  build:
+    command: "bun run build"
+    inputs:
+      - "src/**"
+    outputs:
+      - "dist/**"
+
+  test:
+    command: "bun run test"
+    inputs:
+      - "src/**"
+    outputs: []
+
+  dev:
+    command: "bun run dev"
+    local: true
