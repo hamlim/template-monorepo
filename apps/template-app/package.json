@@ -9,7 +9,7 @@
     "lint": "biome lint"
   },
   "dependencies": {
-    "next": "15.2.0-canary.16",
+    "next": "15.2.4",
     "@local/components": "workspace:*"
   },
   "devDependencies": {
