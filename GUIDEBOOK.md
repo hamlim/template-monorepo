@@ -62,6 +62,8 @@ This template uses GitHub Actions:
   - For running `one-version --check` across the repo on pull requests
 - [`.github/workflows/publish-experimental-releases.yml`](./.github/workflows/publish-experimental-releases.yml)
   - For publishing experimental releases of all packages on pull requests + commits using https://pkg.pr.new
+- [`.github/workflows/release.yml`](./.github/workflows/release.yml)
+  - For creating a GitHub release when a version tag is pushed
 - [`.github/workflows/tests.yml`](./.github/workflows/tests.yml)
   - For running `bun run test` across the repo on pull requests
 - [`.github/workflows/type-check.yml`](./.github/workflows/type-check.yml)
